@@ -7,9 +7,9 @@
 	z-index:9999;
 	-webkit-user-select:none;
 	-webkit-box-sizing:border-box;
-	width:240px;
+	width: 70%;
 	font-size:15px;
-	padding:12px 14px;
+	padding:4%;
 	text-align:left;
 	font-family:helvetica;
 	background-image:-webkit-gradient(linear,0 0,0 100%,color-stop(0,#fff),color-stop(0.02,#eee),color-stop(0.98,#ccc),color-stop(1,#a3a3a3));
@@ -23,9 +23,9 @@
 }
 
 #addToHomeScreen.addToHomeIpad {
-	width:268px;
+	width: 35%;
 	font-size:18px;
-	padding:14px;
+	padding: 2%;
 }
 
 /**
@@ -34,13 +34,13 @@
  *
  */
 #addToHomeScreen.addToHomeWide {
-	width:296px;
+	width: 85%;
 }
 
 #addToHomeScreen.addToHomeIpad.addToHomeWide {
-	width:320px;
+	width: 41%;
 	font-size:18px;
-	padding:14px;
+	padding: 2%;
 }
 
 /**
