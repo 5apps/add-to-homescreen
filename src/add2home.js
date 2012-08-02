@@ -228,6 +228,20 @@ var addToHome = (function (w) {
 		balloon.addEventListener('webkitTransitionEnd', transitionEnd, false);
 
 		closeTimeout = setTimeout(close, options.lifespan);
+
+    setNoScaleClass();
+	}
+
+  function deviceWidthPresent() {
+    var meta = document.querySelector('meta[name=viewport]');
+    if (meta)
+      return meta.content.replace(/\s/g, '').match("width=device-width");
+  }
+
+	function setNoScaleClass() {
+	  if (!(deviceWidthPresent())) {
+      document.getElementById("addToHomeScreen").className = "addToHomeNoscale " + document.getElementById("addToHomeScreen").className;
+    }
 	}
 
 	function manualShow (override) {

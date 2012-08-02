@@ -22,6 +22,12 @@
 	-webkit-box-shadow:0 0 4px rgba(0,0,0,0.5);
 }
 
+/* this should work (increasing the font size of the whole dialog) but it actually don't, it works only if you remove 'width' from the #addToHomeScreen style  */
+
+#addToHomeScreen.addToHomeNoscale {
+  font-size: 40px;
+}
+
 
 /* reset */
 
