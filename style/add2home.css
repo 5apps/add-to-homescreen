@@ -7,7 +7,7 @@
 	z-index:9999;
 	-webkit-user-select:none;
 	-webkit-box-sizing:border-box;
-	width: 70%;
+	width: 72%;
 	font-size:15px;
 	padding:4%;
 	text-align:left;
@@ -22,9 +22,44 @@
 	-webkit-box-shadow:0 0 4px rgba(0,0,0,0.5);
 }
 
+
+/* reset */
+
+#addToHomeScreen p, #addToHomeScreen ul, #addToHomeScreen li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* dialog extra markup */
+
+#addToHomeScreen .dialog {
+  padding: 0 0 2%;
+}
+
+#addToHomeScreen ul {
+  margin: 2% 0 0;
+  list-style-type: none;
+}
+
+#addToHomeScreen li {
+  margin: 2% 0 0;
+}
+
+#addToHomeScreen div.btn {
+  border: 1px solid #333;
+  border-radius: 7px;
+  padding: 1.5% 4%;
+  display: inline-block;
+  font-weight: bold;
+	background-image: -webkit-linear-gradient(top, #eee, #aaa);
+}
+
+/* iPad */
+
 #addToHomeScreen.addToHomeIpad {
 	width: 35%;
-	font-size:18px;
+	font-size:17px;
 	padding: 2%;
 }
 
