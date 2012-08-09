@@ -2,7 +2,8 @@
  * Add to Homescreen v2.0.1 ~ Copyright (c) 2012 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
  */
-var addToHome = (function (w) {
+ if(typeof FiveApps == 'undefined'){var FiveApps={}}
+FiveApps.AddToHome = (function (w) {
 	var nav = w.navigator,
 		isIDevice = 'platform' in nav && (/iphone|ipod|ipad/gi).test(nav.platform),
 		isIPad,
