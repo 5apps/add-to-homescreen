@@ -2,7 +2,9 @@
  * Add to Homescreen v2.0.1 ~ Copyright (c) 2012 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
  */
- if(typeof FiveApps == 'undefined'){var FiveApps={}}
+
+if (typeof FiveApps == 'undefined') { FiveApps= {} }
+
 FiveApps.AddToHome = (function (w) {
 	var nav = w.navigator,
 		isIDevice = 'platform' in nav && (/iphone|ipod|ipad/gi).test(nav.platform),
@@ -68,6 +70,8 @@ FiveApps.AddToHome = (function (w) {
 		};
 
 	function init () {
+		this.initialized = true
+
 		// Preliminary check, prevents all further checks to be performed on iDevices only
 		if ( !isIDevice ) return;
 
@@ -331,10 +335,11 @@ FiveApps.AddToHome = (function (w) {
 		w.sessionStorage.removeItem('addToHomeSession');
 	}
 
-	// Bootstrap!
-	init();
+  // Bootstrap! (removed for FiveApps integration)
+  // init();
 
 	return {
+		init: init,
 		show: manualShow,
 		close: close,
 		reset: reset
